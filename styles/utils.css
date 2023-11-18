@@ -3,7 +3,7 @@
 }
 
 .ut-beautiful-shadow {
-  box-shadow: 3px 6px 14px 0px rgba(19, 17, 23, 0.10), 11px 23px 25px 0px rgba(19, 17, 23, 0.09), 24px 52px 34px 0px rgba(19, 17, 23, 0.05), 44px 92px 41px 0px rgba(19, 17, 23, 0.01), 68px 143px 44px 0px rgba(19, 17, 23, 0.00);
+  box-shadow: 2px 10px 23px 0px rgba(38, 38, 38, 0.05), 7px 41px 41px 0px rgba(38, 38, 38, 0.04), 16px 91px 56px 0px rgba(38, 38, 38, 0.02), 29px 162px 66px 0px rgba(38, 38, 38, 0.01), 45px 254px 72px 0px rgba(38, 38, 38, 0.00);
 }
 
 @media only screen and (min-width: 992px) {
@@ -30,8 +30,6 @@
   }
 }
 
-
-
 .ut-of--hid {
   overflow: hidden;
 }
@@ -40,10 +38,21 @@
   color: inherit;
 }
 
-
 .ut-obj-respond {
   /* make objects (svg, img) to addapt to their containers */
   width: 100%;
 }
 
+.ut-logo {
+  width: calc(.85 * var(--sp--2xl));
+}
+
+.ut-icon {
+  width: calc(.85 * var(--sp--l));
+  height: 50px;
+}
+
+.ut-bb {
+  border-bottom: var(--sp--2xs) solid var(--c--main);
+}
 
