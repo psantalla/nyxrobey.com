@@ -1,0 +1,58 @@
+:root {
+    --t-ln-ht--big-t: 110%;
+    /* line height for sizes of text: 3xl and above */
+    --t-ln-ht--medium-t: 128%;
+    /* line height for sizes of text: XL and 2xl */
+    --t-ln-ht--small-t: 155%;
+    /* line height for sizes of text: l and below */
+    --t-lt-sp--h: -0.015em;
+    /* letter spacing for headings */
+    --t-lt-sp--p: normal;
+    /* letter spacing for paragraphs */
+    --t--ff--h: 'Merriweather Sans', sans-serif;
+    --t--ff--p: 'Quicksand', sans-serif;
+}
+
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --t-s--xs: clamp(0.66203rem, -0.14211vw + 0.71701rem, 0.58272rem);
+        --t-s--s: clamp(0.78782rem, -0.04382vw + 0.80477rem, 0.76336rem);
+        --t-s--m: clamp(0.9375rem, 0.11198vw + 0.89418rem, 1rem);
+        --t-s--l: clamp(1.11562rem, 0.34826vw + 0.98089rem, 1.31rem);
+        --t-s--xl: clamp(1.32759rem, 0.69609vw + 1.05829rem, 1.7161rem);
+        --t-s--2xl: clamp(1.57984rem, 1.19732vw + 1.11662rem, 2.24809rem);
+        --t-s--3xl: clamp(1.88001rem, 1.90816vw + 1.14178rem, 2.945rem);
+        --t-s--4xl: clamp(2.23721rem, 2.90391vw + 1.11376rem, 3.85795rem);
+        --t-s--5xl: clamp(2.66228rem, 4.28513vw + 1.00447rem, 5.05391rem);
+    }
+}
+
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --t-s--xs: 0.66203rem;
+        --t-s--s: 0.78782rem;
+        --t-s--m: 0.9375rem;
+        --t-s--l: 1.11562rem;
+        --t-s--xl: 1.32759rem;
+        --t-s--2xl: 1.57984rem;
+        --t-s--3xl: 1.88001rem;
+        --t-s--4xl: 2.23721rem;
+        --t-s--5xl: 2.66228rem;
+    }
+
+    @media screen and (min-width: 1512px) {
+        :root {
+            --t-s--xs: 0.58272rem;
+            --t-s--s: 0.76336rem;
+            --t-s--m: 1rem;
+            --t-s--l: 1.31rem;
+            --t-s--xl: 1.7161rem;
+            --t-s--2xl: 2.24809rem;
+            --t-s--3xl: 2.945rem;
+            --t-s--4xl: 3.85795rem;
+            --t-s--5xl: 5.05391rem;
+        }
+    }
+}

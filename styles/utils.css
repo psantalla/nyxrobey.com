@@ -1,0 +1,49 @@
+.hid {
+  display: none !important;
+}
+
+.ut-beautiful-shadow {
+  box-shadow: 3px 6px 14px 0px rgba(19, 17, 23, 0.10), 11px 23px 25px 0px rgba(19, 17, 23, 0.09), 24px 52px 34px 0px rgba(19, 17, 23, 0.05), 44px 92px 41px 0px rgba(19, 17, 23, 0.01), 68px 143px 44px 0px rgba(19, 17, 23, 0.00);
+}
+
+@media only screen and (min-width: 992px) {
+
+  /* only desktop */
+  .hid-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+
+  /* only tablet */
+  .hid-tablet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+
+  /* only mobile */
+  .hid-mobile {
+    display: none;
+  }
+}
+
+
+
+.ut-of--hid {
+  overflow: hidden;
+}
+
+.ut-link {
+  color: inherit;
+}
+
+
+.ut-obj-respond {
+  /* make objects (svg, img) to addapt to their containers */
+  width: 100%;
+}
+
+
