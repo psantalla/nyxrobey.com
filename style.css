@@ -1,0 +1,7 @@
+@import url(https://psantalla.github.io/catalyst/style.css);
+@import url(styles/config/color.css);
+@import url(styles/config/spacing.css);
+@import url(styles/config/typography.css);
+@import url(styles/components.css);
+@import url(styles/core.css);
+@import url(styles/utils.css);

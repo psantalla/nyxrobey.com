@@ -1,3 +1,30 @@
+/* Ed. 1.1 */
+@media only screen and (min-width: 1513px) {
+    /* only over max site width */
+}
+
+@media only screen and (min-width: 992px) {
+    /* only desktop */
+}
+
+@media only screen and (min-width: 620px) {
+    /* tablet and desktop */
+}
+
+@media only screen and (min-width: 620px) and (max-width: 991px) {
+    /* only tablet */
+}
+
+@media only screen and (max-width: 991px) {
+    /* tablet and mobile */
+}
+
+@media only screen and (max-width: 619px) {
+    /* only mobile */
+}
+
+
+
 :root {
     --sp--nil: 0rem;
     --sp--2xs: 0.25rem;
