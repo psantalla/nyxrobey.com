@@ -9,9 +9,6 @@ body::-webkit-scrollbar {
 body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-}
-
-body {
     max-width: 700px;
     overflow: scroll;
 }
@@ -37,4 +34,8 @@ nav a {
 
 nav a:hover {
     color: var(--c--main);
+}
+
+nav img {
+    width: 100%;
 }
