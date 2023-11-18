@@ -1,16 +1,14 @@
-html {
-    overflow: hidden;
-}
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
 body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     max-width: 700px;
-    overflow: scroll;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 article h1 {
@@ -22,7 +20,15 @@ article p {
 }
 
 article p + img {
-    margin-bottom: var(--sp--l);
+    margin-top: var(--sp--xs);
+}
+
+article img + p {
+    margin-top: calc(var(--sp--m) + var(--sp--xs));
+}
+
+article img {
+    width: 100%;
 }
 
 nav a {
@@ -34,8 +40,4 @@ nav a {
 
 nav a:hover {
     color: var(--c--main);
-}
-
-nav img {
-    width: 100%;
 }
