@@ -1,0 +1,16 @@
+.com-logotype {
+    display: flex;
+    align-items: center;
+    gap: var(--sp--xs);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: calc(.85 * var(--t-s--l));
+    color: inherit;
+    letter-spacing: .025em;
+    text-decoration: none;
+}
+
+.com-logotype img {
+    width: 100%;
+    max-width: var(--sp--2xl);
+    border-radius: 100%;
+}

@@ -43,13 +43,8 @@
   width: 100%;
 }
 
-.ut-logo {
-  width: calc(.85 * var(--sp--2xl));
-}
-
-.ut-icon {
+nav .ut-icon {
   width: calc(.85 * var(--sp--l));
-  height: 50px;
 }
 
 .ut-bb {
