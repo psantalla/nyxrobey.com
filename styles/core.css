@@ -1,33 +1,27 @@
-
-
 body {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
     max-width: 700px;
-
-}
-
-body::-webkit-scrollbar {
-    display: none;
 }
 
 article h1 {
-    margin-bottom: var(--sp--l);
-}
-
-article p {
     margin-bottom: var(--sp--m);
 }
 
-article p + img {
-    margin-top: var(--sp--xs);
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    margin-top: var(--sp--xl);
+    margin-bottom: var(--sp--xs);
 }
 
-article img + p {
-    margin-top: calc(var(--sp--m) + var(--sp--xs));
+article p {
+    margin-top: var(--sp--m);
 }
 
 article img {
+    margin-top: var(--sp--l);
+    margin-bottom: var(--sp--2xs);
     width: 100%;
 }
 
