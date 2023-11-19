@@ -1,55 +1,58 @@
 :root {
-    --t-ln-ht--big-t: 110%;
-    /* line height for sizes of text: 3xl and above */
-    --t-ln-ht--medium-t: 128%;
-    /* line height for sizes of text: XL and 2xl */
-    --t-ln-ht--small-t: 155%;
-    /* line height for sizes of text: l and below */
-    --t-lt-sp--h: -0.015em;
-    /* letter spacing for headings */
-    --t-lt-sp--p: normal;
-    /* letter spacing for paragraphs */
-    --t--ff--h: 'Merriweather Sans', sans-serif;
-    --t--ff--p: 'Quicksand', sans-serif;
+  --t-ln-ht--big-t: 120%;
+  /* line height for sizes of text: 3xl and above */
+  --t-ln-ht--medium-t: 128%;
+  /* line height for sizes of text: XL and 2xl */
+  --t-ln-ht--small-t: 155%;
+  /* line height for sizes of text: l and below */
+  --t-lt-sp--h: -0.015em;
+  /* letter spacing for headings */
+  --t-lt-sp--p: normal;
+  /* letter spacing for paragraphs */
+  --t--ff--h: 'Merriweather Sans', sans-serif;
+  --t--ff--p: 'Quicksand', sans-serif;
 }
+
 /* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --t-s--xs: clamp(0.651rem, -1.743vw + 1.326rem, 0.563rem);
+    --t-s--s: clamp(0.781rem, -0.614vw + 1.019rem, 0.75rem);
+    --t-s--m: clamp(0.938rem, 1.235vw + 0.46rem, 1rem);
+    --t-s--l: clamp(1.125rem, 4.109vw + -0.465rem, 1.333rem);
+    --t-s--xl: clamp(1.35rem, 8.432vw + -1.912rem, 1.777rem);
+    --t-s--2xl: clamp(1.62rem, 14.787vw + -4.101rem, 2.369rem);
+    --t-s--3xl: clamp(1.944rem, 23.967vw + -7.328rem, 3.157rem);
+    --t-s--4xl: clamp(2.333rem, 37.055vw + -12.003rem, 4.209rem);
+    --t-s--5xl: clamp(2.799rem, 55.523vw + -18.681rem, 5.61rem);
+  }
+}
+
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --t-s--xs: 0.651rem;
+    --t-s--s: 0.781rem;
+    --t-s--m: 0.938rem;
+    --t-s--l: 1.125rem;
+    --t-s--xl: 1.35rem;
+    --t-s--2xl: 1.62rem;
+    --t-s--3xl: 1.944rem;
+    --t-s--4xl: 2.333rem;
+    --t-s--5xl: 2.799rem;
+  }
+
+  @media screen and (min-width: 700px) {
     :root {
-      --t-s--xs: clamp(0.651rem, -1.743vw + 1.326rem, 0.563rem);
-          --t-s--s: clamp(0.781rem, -0.614vw + 1.019rem, 0.75rem);
-          --t-s--m: clamp(0.938rem, 1.235vw + 0.46rem, 1rem);
-          --t-s--l: clamp(1.125rem, 4.109vw + -0.465rem, 1.333rem);
-          --t-s--xl: clamp(1.35rem, 8.432vw + -1.912rem, 1.777rem);
-          --t-s--2xl: clamp(1.62rem, 14.787vw + -4.101rem, 2.369rem);
-          --t-s--3xl: clamp(1.944rem, 23.967vw + -7.328rem, 3.157rem);
-          --t-s--4xl: clamp(2.333rem, 37.055vw + -12.003rem, 4.209rem);
-          --t-s--5xl: clamp(2.799rem, 55.523vw + -18.681rem, 5.61rem);
+      --t-s--xs: 0.563rem;
+      --t-s--s: 0.75rem;
+      --t-s--m: 1rem;
+      --t-s--l: 1.333rem;
+      --t-s--xl: 1.777rem;
+      --t-s--2xl: 2.369rem;
+      --t-s--3xl: 3.157rem;
+      --t-s--4xl: 4.209rem;
+      --t-s--5xl: 5.61rem;
     }
   }
-  /* Fallback variables for browsers that don't support clamp */
-  @supports not (font-size: clamp(1rem, 1vw, 1rem)) {
-    :root {
-      --t-s--xs: 0.651rem;
-          --t-s--s: 0.781rem;
-          --t-s--m: 0.938rem;
-          --t-s--l: 1.125rem;
-          --t-s--xl: 1.35rem;
-          --t-s--2xl: 1.62rem;
-          --t-s--3xl: 1.944rem;
-          --t-s--4xl: 2.333rem;
-          --t-s--5xl: 2.799rem;
-    }
-    @media screen and (min-width: 700px) {
-      :root {
-        --t-s--xs: 0.563rem;
-              --t-s--s: 0.75rem;
-              --t-s--m: 1rem;
-              --t-s--l: 1.333rem;
-              --t-s--xl: 1.777rem;
-              --t-s--2xl: 2.369rem;
-              --t-s--3xl: 3.157rem;
-              --t-s--4xl: 4.209rem;
-              --t-s--5xl: 5.61rem;
-      }
-    }
-  }
+}

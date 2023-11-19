@@ -36,6 +36,22 @@ nav a:hover {
     color: var(--c--main);
 }
 
+li a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 150ms;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+li a::after {
+    content: " ↗";
+    font-size: .65em;
+    vertical-align: top;
+}
+
 small a {
     text-decoration: none;
     line-height: inherit;
