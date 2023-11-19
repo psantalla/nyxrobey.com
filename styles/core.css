@@ -51,8 +51,3 @@ li a::after {
     font-size: .65em;
     vertical-align: top;
 }
-
-small a {
-    text-decoration: none;
-    line-height: inherit;
-}
