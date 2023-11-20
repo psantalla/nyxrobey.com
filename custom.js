@@ -11,9 +11,8 @@ function agregarImagenAlElemento(selector, src, clase) {
     });
 }
 
-// Llamada para agregar la imagen a elementos con la clase 'ut-mark--accenture'
-agregarImagenAlElemento('span.ut-mark--accenture', 'assets/accenture.svg', 'com-icon--accenture');
 
-// Llamada para agregar la imagen a elementos con la clase 'ut-mark--etsy'
+agregarImagenAlElemento('span.ut-mark--accenture', 'assets/accenture.svg', 'com-icon--accenture');
 agregarImagenAlElemento('span.ut-mark--etsy', 'assets/etsy.png', 'com-icon--etsy');
+agregarImagenAlElemento('span.ut-mark--medium', 'assets/medium.svg', 'com-icon--medium');
 
