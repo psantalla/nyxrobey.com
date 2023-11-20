@@ -1,18 +1,13 @@
-// add icons to key words
-
-function agregarImagenAlElemento(selector, src, clase) {
-    const elementos = document.querySelectorAll(selector);
-
-    elementos.forEach((elemento) => {
-        const image = document.createElement('img');
+function agregarImagenAlElemento(selector, src, clase, altText) {
+    document.querySelectorAll(selector).forEach((elemento) => {
+        const image = new Image();
         image.src = src;
+        image.alt = altText;
         image.classList.add(clase);
-        elemento.insertBefore(image, elemento.firstChild);
+        elemento.insertAdjacentElement('afterbegin', image);
     });
 }
 
-
-agregarImagenAlElemento('span.ut-mark--accenture', 'assets/accenture.svg', 'com-icon--accenture');
-agregarImagenAlElemento('span.ut-mark--etsy', 'assets/etsy.png', 'com-icon--etsy');
-agregarImagenAlElemento('span.ut-mark--medium', 'assets/medium.svg', 'com-icon--medium');
-
+agregarImagenAlElemento('span.ut-mark--accenture', 'assets/accenture.svg', 'com-icon--accenture', 'Accenture Icon');
+agregarImagenAlElemento('span.ut-mark--etsy', 'assets/etsy.png', 'com-icon--etsy', 'Etsy Icon');
+agregarImagenAlElemento('span.ut-mark--medium', 'assets/medium.svg', 'com-icon--medium', 'Medium Icon');
