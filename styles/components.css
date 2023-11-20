@@ -14,3 +14,17 @@
     max-width: var(--sp--2xl);
     border-radius: 100%;
 }
+
+.com-icon--accenture {
+    width: 10px;
+    margin-right: 3px;
+    margin-left: 2px;
+    margin-bottom: -1px;
+}
+
+.com-icon--etsy {
+    width: 12px;
+    margin-right: 3px;
+    margin-left: 2px;
+    margin-bottom: -1px;
+}
