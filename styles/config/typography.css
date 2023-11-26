@@ -56,3 +56,7 @@
     }
   }
 }
+
+.t-fw--bold {
+  font-weight: bold;
+}

@@ -15,6 +15,12 @@ article h6 {
     margin-bottom: var(--sp--xs);
 }
 
+article figcaption {
+    color: var(--c--main--60);
+    font-size: var(--t-s--s);
+    text-align: center;
+}
+
 article p {
     margin-top: var(--sp--m);
 }
@@ -23,6 +29,10 @@ article img {
     margin-top: var(--sp--l);
     margin-bottom: var(--sp--2xs);
     width: 100%;
+}
+
+article a {
+    color: inherit;
 }
 
 nav a {
@@ -35,7 +45,6 @@ nav a {
 nav a:hover {
     color: var(--c--main);
 }
-
 
 li a {
     color: inherit;
@@ -51,4 +60,15 @@ li a::after {
     content: " ↗";
     font-size: .65em;
     vertical-align: top;
+}
+
+article a::after {
+    content: " ↗";
+    font-size: .65em;
+margin-bottom: 5;
+}
+
+figcaption a {
+    font-size: inherit;
+    color: inherit;
 }
